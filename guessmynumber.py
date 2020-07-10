@@ -40,7 +40,7 @@ while game_run_status==False:
 	myguess=get_a_guess()
 	game_run_status=guess_responder(myguess,machineguess)
 	guess_count=guess_count+1
-	if  guess_count>=allowed_guesses :
+	if  guess_count>allowed_guesses :
 		print "**************** YOU LOST !***********************************************\n"
 		print "     You LOST ! You are not allowed more than "+str(allowed_guesses)+ " guesses\n"
 		print "     The number I had chosen was "+str(machineguess)+" . Better luck next time\n"
